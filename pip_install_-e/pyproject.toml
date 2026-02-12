@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mypkg" # インポートするときに使う名前、基本ターゲットにするフォルダと同じ名前にする
+version = "0.1"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mypkg"] #ターゲットにするフォルダ

@@ -14,7 +14,7 @@ with mlflow.start_run():
     mlflow.log_param("learning_rate", lr)
     mlflow.log_param("epochs", epochs)
 
-       # ---------------------
+    # ---------------------
     # ダミーの「学習処理」
     # ---------------------
     loss = 1.0
@@ -27,8 +27,10 @@ with mlflow.start_run():
     mlflow.log_metric("final_loss", loss)
 
     # ---------------------
-    # アーティファクト（成果物）
+    # アーティファクト（数値じゃなくてファイルで保存するやつ）
     # ---------------------
+    
+    #とりあえず別の場所にファイルを作る
     with open("result.txt", "w", encoding="utf-8") as f:
         f.write(f"final_loss: {loss}")
 
