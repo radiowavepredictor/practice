@@ -1,0 +1,9 @@
+{
+  "files.exclude": {
+    "**/__pycache__": true          // .pycを見えなくする
+  },
+    "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",      //  checkingmodeの設定をbasicにする
+  "python.analysis.diagnosticMode": "openFilesOnly"
+}
+//  vscodeの設定を変える
